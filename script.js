@@ -15,13 +15,9 @@ localStorage.setItem(hour, inputText);
 
 //***Load Local Storage Data Back In .
 // Keep in mind..  .text cannot be used on form inputs or scripts, need to use val here.
-// There's probably a better way to loop through this 
 
-for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    console.log(`${key}: ${localStorage.getItem(key)}`);
-}
-
+// }
+///*** Load Local Storage Data  */
 $("#hour9 .description").val(localStorage.getItem("hour9"));
 $("#hour10 .description").val(localStorage.getItem("hour10"));
 $("#hour11 .description").val(localStorage.getItem("hour11"));
@@ -32,6 +28,12 @@ $("#hour15 .description").val(localStorage.getItem("hour15"));
 $("#hour16 .description").val(localStorage.getItem("hour16"));
 $("#hour17 .description").val(localStorage.getItem("hour17"));
 // // alert(localStorage.getItem("hour9"));
+
+// There's probably a better way to loop through this 
+
+// for (let i = 0; i < localStorage.length; i++) {
+//     const key = localStorage.key(i);
+//     console.log(`${key}: ${localStorage.getItem(key)}`);
 
 
 
